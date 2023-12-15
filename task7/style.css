@@ -1,0 +1,32 @@
+body{
+    background-color: aliceblue;
+}
+.main{
+    margin-left: 190px;
+    margin-top: 80px;
+}
+.head1{
+    display: flex;
+    margin: 12px;
+    margin-left: 2px;
+}
+.head2{
+    display: flex;
+}
+.img1 ,.img2 ,.img3{
+    margin: 14px;
+    position: relative;
+    background-color: aqua;
+    padding: 20px;
+}
+.img4 ,.img5 ,.img6{
+    margin: 14px;
+    position: relative;
+    background-color: blueviolet;
+    padding: 20px;
+}
+a{
+    position: absolute;
+   right: 65px;
+   top: 135px;
+}
