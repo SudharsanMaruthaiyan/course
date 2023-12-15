@@ -42,3 +42,9 @@ a:hover{
 .img2:hover{
     background-color: rgb(7, 36, 36);
 }
+
+img:hover{
+    scale: 1.2;
+    transition: 1.4s;
+
+}
