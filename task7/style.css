@@ -1,57 +1,112 @@
-body{
-    background-image: linear-gradient(to right ,pink,gray);
+body {
+    background-image: linear-gradient(to right, rgb(209, 20, 168), rgb(255, 255, 255));
 }
-.main{
-    margin-left: 350px;
-    margin-top: 170px;
+
+.main {
+    margin-left: 300px;
+    margin-top: 70px;
 }
-.head1{
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 35px;
+    font-style: oblique;
+    font-family: cursive;
+    background: linear-gradient(rgb(63, 10, 255), rgb(201, 54, 152));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.head1 {
     display: flex;
     margin: 12px;
     margin-left: 2px;
 }
-.head2{
+
+.head2 {
     display: flex;
 }
-.img1 ,.img2 ,.img3{
+
+h1:hover {
+    scale: 1.2;
+    transition: 1s;
+    transform: rotate(-15deg);
+
+}
+
+.img1,
+.img2,
+.img3 {
     margin: 14px;
     position: relative;
-    background-color: aqua;
     padding: 40px;
     border: 2px solid;
-    
-    
 }
-.img4 ,.img5 ,.img6{
+
+.img4,
+.img5,
+.img6 {
     margin: 14px;
     position: relative;
     background-color: blueviolet;
     padding: 40px;
     border: 2px solid;
-    border-radius: 10px;
-    
 }
-a{
+
+a {
     position: absolute;
-   right: 80px;
-   top: 165px;
-   text-decoration: none;
+    right: 80px;
+    top: 165px;
+    text-decoration: none;
 }
-a:hover{
+
+a:hover {
     color: red;
 }
 
-.img2:hover{
-    background-color: rgb(7, 36, 36);
+.img2:hover {
+    /* background-color: rgb(7, 36, 36); */
+    background: linear-gradient(rgb(15, 235, 243), rgb(25, 136, 201));
 }
 
-img:hover{
+.img1:hover {
+    /* background-color: rgb(50, 107, 230); */
+    background: linear-gradient(gold, rgb(131, 212, 131));
+}
+
+.img3:hover {
+    /* background-color: rgb(241, 26, 26); */
+    background: linear-gradient(rgb(122, 28, 126), rgb(130, 28, 214));
+}
+
+.img4:hover {
+    /* background-color: rgb(182, 226, 24); */
+    background: linear-gradient(rgb(218, 27, 106), rgb(228, 126, 10));
+}
+
+.img5:hover {
+    /* background-color: rgb(15, 238, 63); */
+    background: linear-gradient(rgb(8, 211, 126), rgb(126, 141, 126));
+}
+
+.img6:hover {
+    /* background-color: rgb(230, 173, 50); */
+    background: linear-gradient(rgb(6, 111, 182), rgb(187, 23, 228));
+
+}
+
+img:hover {
     scale: 1.2;
     transition: 1.4s;
     border-radius: 30px;
-
 }
-div:hover{
+
+div {
+    border-radius: 20px;
+}
+
+div:hover {
     border-radius: 100%;
     transition: 1.4s;
 }

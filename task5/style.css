@@ -9,7 +9,7 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
     width: 306px;
-    margin-left: 350px;
+    margin-left: 520px;
 }
 .head3{
     background-color: gray;
@@ -17,7 +17,7 @@ body{
     align-items: center;
     padding-top: 2px;
     padding-bottom: 2px;
-    margin-left: 350px;
+    margin-left: 520px;
     margin-top: 4px;
 }
 .head3,h1,a{
@@ -44,7 +44,7 @@ h1:hover{
     width: 306px;
     padding-top: 5px;
     padding-bottom: 4px;
-    margin-left: 350px;
+    margin-left: 520px;
     margin-top: 2px;
 }
 .head4:hover{
