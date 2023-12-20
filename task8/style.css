@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main1 {
+    background-color: #FF2000;
+    height: 550px;
+
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80px;
+}
+
+.main .logo {
+    color: #8FFF8A;
+    font-size: 40px;
+    /* padding: 20px; */
+    /* text-align: center; */
+}
+
+.main .navbox .navbar .nav-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.main .navbox .navbar .nav-content li {
+    list-style: none;
+    text-decoration: none;
+    /* width: auto; */
+    margin-left: 30px;
+    line-height: 1.59;
+    color: #8FFF8A;
+    font-size: 17px;
+    padding: 7px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.main .navbox .navbar .nav-content li:hover {
+    background-color: black;
+    /* padding: 7px; */
+    border-radius: 10px;
+
+}
+
+.navbox .navbar .nav-content li .courses:nth-child(3) {
+    position: relative;
+    color: white;
+}
+
+.drop-content .dropcontent {
+    position: absolute;
+    top: 61px;
+    transform: translateX(-55px);
+}
+
+.drop-content .dropcontent li {
+    list-style: none;
+    line-height: 1.59;
+    width: 100%;
+    padding: 8px;
+}
+
+.drop-content .dropcontent li:hover {
+    background-color: yellowgreen;
+}
+
+.drop-content .dropcontent {
+    display: none;
+    background-color: white;
+    background: transparent;
+}
+
+.navbar .nav-content li:nth-child(3):hover .drop-content .dropcontent {
+    display: block;
+}
+
+.dropcontent .fs .fs-box {
+    position: absolute;
+    transform: translateX(113px);
+    top: 0px;
+    display: none;
+    /* left: 150px; */
+}
+
+.dropcontent .fs .fs-box li {
+    width: 150px;
+}
+
+.dropcontent li:first-child:hover .fs-box {
+    display: block;
+}
+
+.fs .fs-box li:hover {
+    letter-spacing: 2px;
+    transition: 1s;
+}
