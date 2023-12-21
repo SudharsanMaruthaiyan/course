@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(14, 13, 13);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.main {
+    background-color: #556574;
+    width: 330px;
+    height: 475px;
+    border-radius: 20px;
+}
+
+.main .taskbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: white;
+}
+
+.main .taskbar .right-arrow i {
+    background-color: #505C6A;
+    padding: 13px 15px;
+    border-radius: 200%;
+    box-shadow: 0px 15px 19px #1e2124;
+    font-size: 20px;
+    color: white;
+}
+
+.main .taskbar .menu-bar i {
+    font-size: 18px;
+    background-color: #505C6A;
+    padding: 15px;
+    border-radius: 100%;
+    box-shadow: 0px 15px 19px #1e2124;
+    color: white;
+}
+
+.main .song-db {
+    text-align: center;
+}
+
+.main .song-db .image img {
+    border-radius: 100%;
+    box-shadow: 0px 15px 22px #1e2124;
+}
+
+.main .song-db .img-content {
+    color: rgb(231, 230, 230);
+    padding: 10px;
+}
+
+.main .song-db .img-content h1 {
+    letter-spacing: 1.59;
+}
+
+.main .song-db .img-content p {
+    font-size: 13px;
+    letter-spacing: 1.60px;
+}
+
+.range .range-btn {
+    display: flex;
+    justify-content: center;
+}
+
+/* .range .range-btn input:in-range{
+    color: white;
+} */
+
+.range .range-btn label {
+    color: white;
+    padding-left: 10px;
+}
+
+/* .range .range-btn .linear{
+    width: 50px;
+    height: 5px;
+    background-color: red;
+    transition: linear 2s;
+}
+
+.linear:hover{
+   width: 300px;
+} */
+
+.playbox .play-btn {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 18px;
+}
+
+.playbox .play-btn i {
+    background-color: #505C6A;
+    font-size: 18px;
+    padding: 13px 15px;
+    /* padding: 12px; */
+    border-radius: 100%;
+    box-shadow: 0px 15px 19px #1e2124;
+    color: white;
+}
+
+.playbox .play-btn div .fa-play {
+    border-radius: 100%;
+    background-color: orange;
+    color: white;
+}
+
+/* .linear{
+    width: 100px;
+    height: 10px;
+    background-color: red;
+    transition: linear 1s;
+    margin-left: 50px;
+}
+
+.linear:hover{
+    width: 200px;
+} */
