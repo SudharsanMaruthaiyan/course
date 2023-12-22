@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins&family=Rubik+Doodle+Shadow&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+body {
+    background-color: white;
+    position: relative;
+    min-height: 100vh;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    /* border: 2px solid black; */
+    border-bottom: 1px solid rgba(170, 170, 170, 0.932);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    padding: 0px 60px;
+}
+
+.head .logo {
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+}
+
+.nav ul {
+    /* display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 29px;
+     */
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+
+.nav ul li {
+    list-style: none;
+    /* padding: 0px 20px; */
+    position: relative;
+    cursor: pointer;
+
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul li::after {
+    content: " ";
+    position: absolute;
+    width: 0%;
+    height: 2.5px;
+    background-color: rgb(128, 127, 127);
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s linear;
+}
+
+.nav ul li:hover::after {
+    width: 100%;
+}
+
+.nav .button-box .btn button {
+    /* background-color: black; */
+    height: 100%;
+    color: rgb(0, 0, 0);
+    padding: 17px 5px;
+    border: none;
+    background: transparent;
+}
+
+.nav .button-box .btn button:hover {
+    background-color: black;
+    color: white;
+}
+
+.head2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 60px;
+    align-items: center;
+}
+
+.head2 .h-title-1 h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.644);
+}
+
+.head2 .h-title-1 h3 {
+    font-size: 45px;
+    color: black;
+    letter-spacing: 1.59px;
+}
+
+.head2 .h-title-2 {
+    text-wrap: wrap;
+    width: 40.2%;
+}
+
+.head2 .h-title-2 p {
+    font-size: 19px;
+    letter-spacing: 1.40px;
+    padding-top: 10px;
+}
+
+.head2 .h-title-2 .bt-box {
+    padding: 45px 0px;
+}
+
+.head2 .h-title-2 .bt-box button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: none;
+    background: transparent;
+    font-size: 20px;
+    /* border: 2px solid rgb(185, 42, 42); */
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+    box-shadow: 0px 0px 6px rgba(255, 135, 255, 0.5);
+    backdrop-filter: blur(10%);
+    /* transition: .4s ease-in; */
+}
+
+.head2 .h-title-2 .bt-box button:hover {
+    background-color: black;
+    color: white;
+    /* transition: 2s; */
+    /* box-shadow: inset -120px 0px 0px 0px red ,inset 120px 0px 0px 0px red; */
+}
+
+.title-img .img-1 {
+    padding: 0px 60px;
+
+}
+
+/* .title-img .img-1 img{
+    filter:grayscale(100%);
+}
+.title-img .img-1 img:hover{
+    filter: grayscale(0);
+} */
+.title-img-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title-img-2 .content h2 {
+    font-size: 40px;
+}
+
+.title-img-2 .content ul {
+    padding-top: 10px;
+    list-style: none;
+}
+
+.title-img-2 .content ul li {
+    display: block;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgba(73, 72, 72, 0.527);
+    box-shadow: inset 0px 10px 35px rgb(255, 255, 255, 0.10);
+    backdrop-filter: blur(100%);
+}
+
+/* .title-img-2 .content ul li{
+    box-shadow: 10px 10px 15px red;
+} */
+
+
+.content-img {
+    display: flex;
+    gap: 40px;
+    padding-top: 20px;
+}
+
+.content-img img {
+    filter: grayscale(100%);
+}
+
+.content-img img:hover {
+    filter: grayscale(0%);
+    /* transition: 1s; */
+    /* scale: 1.02; */
+    transform: scale(1.02);
+}
+
+.bg2 {
+    background-color: black;
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bgimg2 {
+    /* width: 60%; */
+    background-color: black;
+}
+
+.bgimg2 img {
+    /* padding-top: 10px; */
+    background-color: black;
+    filter: grayscale(40%);
+}
+
+.bg-img2-content {
+    /* width: 45%; */
+    height: fit-content;
+    background-color: black;
+    color: white;
+    padding-left: 120px;
+}
+
+.bg-img2-content h2 {
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    padding: 20px 0px;
+
+}
+
+.bg-img2-content p {
+    background-color: black;
+    color: white;
+    /* text-wrap: nowrap; */
+}
+
+.bg-img2-content h4 {
+    background-color: black;
+    color: white;
+    font-size: 35px;
+}
+
+.bg-img2-content ul {
+    margin: 20px 20px;
+}
+
+.bg-img2-content ul li {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+
+}
+
+.bg-img2-content ul li::marker {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+
+.img-btn {
+    background-color: black;
+    color: white;
+    padding: 20px 0px;
+}
+
+.img-btn button {
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 255, 0.514);
+    color: white;
+    box-shadow: inset 10px 30px 15px blue;
+}
+
+.recent-head {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.644);
+}
+
+.recent .recent-pp-img {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+}
+
+.recent .recent-pp-img .re-img-1 {
+    flex-basis: 26%;
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.recent .recent-pp-img .re-img-1 img {
+    border: 1px solid rgb(129, 129, 129);
+    box-shadow: 6px 10px 10px gray;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.recent .recent-pp-img .re-img-1 p {
+    background-color: rgba(185, 183, 183, 0.144);
+
+    width: 200px;
+    margin-top: 0px;
+    margin-left: 70px;
+    text-align: start;
+    box-shadow: ;
+
+}
+
+.recent .recent-pp-img .re-img-1 p::first-letter {
+    font-size: 22px;
+}
+
+.recent .recent-pp-img .re-img-1 .p1 {
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.recent .recent-pp-img .re-img-1 img:hover {
+    transform: scale(1.02);
+    transition: 1.2s;
+}
+
+.recent-btn {
+    text-align: center;
+    color: white;
+    padding: 30px 0px;
+}
+
+.recent-btn button {
+    cursor: pointer;
+    /* background: transparent; */
+    padding: 10px 30px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: .4s ease-in;
+    box-shadow: ;
+    border-radius: 5px;
+}
+
+.recent-btn button:hover {
+    transform: translateY(-10px);
+    box-shadow: inset 140px 30px 15px blue, inset -140px -30px 15px blue;
+}
+
+footer{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 200px;
+}
+/* .footer-box{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 200px;
+    position: relative;
+} */
+/* .ft{
+    position: absolute;
+    background: transparent;
+}
+.ft h1{
+   
+    background: transparent;
+    color: white;
+} */
