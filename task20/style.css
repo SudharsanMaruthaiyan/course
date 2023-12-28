@@ -24,6 +24,10 @@ img:hover{
     transition: 1.2s;
 }
 
+#closed{
+    filter: grayscale(100);
+}
+
 /* .img-offer{
     
     bottom: 330px;
@@ -130,6 +134,13 @@ img:hover{
     font-weight: 500;
     color: rgb(75, 72, 72);
     padding-bottom: 6px;
+}
+
+.open-time{
+    color: red;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
 }
 
 .br {
