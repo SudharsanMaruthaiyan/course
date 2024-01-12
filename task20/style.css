@@ -4,7 +4,36 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.change {
+    display: none;
+    /* padding: 0px 100px; */
+}
+
+@media only screen and (min-width: 992px) {
+    .change {
+        display: block;
+    }
+
+    #offcanvasNavbar {
+        padding-left: 10px;
+    }
+}
+
+/* #offcanvasNavbar{
+    padding-left: 160px;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -19,13 +48,9 @@ img {
     background-size: cover;
 }
 
-img:hover{
+img:hover {
     transform: scale(1.02);
     transition: 1.2s;
-}
-
-#closed{
-    filter: grayscale(100);
 }
 
 /* .img-offer{
@@ -34,7 +59,7 @@ img:hover{
     z-index: 100;
 
 } */
-.img-offer .img-offer-ct2{
+.img-offer .img-offer-ct2 {
     position: absolute;
     background-color: blue;
     color: white;
@@ -42,11 +67,11 @@ img:hover{
     border-radius: 2px;
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
-    
-   
+
+
 }
 
-.img-offer .img-offer-ct{
+.img-offer .img-offer-ct {
     position: absolute;
     transform: translateY(-42px);
     background-color: blue;
@@ -57,15 +82,13 @@ img:hover{
     font-size: 13px;
     z-index: 1000;
 }
+
 /* .img-offer .img-offer-ct:hover{
     letter-spacing: 1px;
     transition: 1.2s;
 } */
 
 /* head */
-.container {
-    padding: 0px 8%;
-}
 
 .head {
     margin-left: 20px;
@@ -94,7 +117,7 @@ img:hover{
 .img-content h4 {
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
-    font-size: 15.3px;
+    font-size: 15px;
 }
 
 .img-content .p-bg {
@@ -136,13 +159,6 @@ img:hover{
     padding-bottom: 6px;
 }
 
-.open-time{
-    color: red;
-    font-size: 15px;
-    font-weight: 100;
-    font-family: 'Poppins', sans-serif;
-}
-
 .br {
     background-color: rgba(75, 72, 72, 0.432);
     width: 100%;
@@ -179,7 +195,7 @@ img:hover{
 
 }
 
-.card1:hover .img-offer-ct{
+.card1:hover .img-offer-ct {
     /* transform: scale(1.02); */
     letter-spacing: 1.5px;
     transition: 1.2s;
@@ -189,4 +205,13 @@ img:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.navbar-brand {
+    font-weight: 1000;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Bona Nova', serif;
+    color: red;
+
 }
