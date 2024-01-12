@@ -77,8 +77,18 @@ cursor: pointer;
     color: white;
 }
 
+
+    .main-banner{
+       display: flex;
+       /* flex-wrap: nowrap; */
+    }
+   
+
+
 .banner-box-1{
     position: relative;
+    /* width: 90%; */
+
 }
 .banner-box{
     position: absolute;
@@ -131,6 +141,48 @@ cursor: pointer;
     letter-spacing: 1.2px;
 }
 
+/* main2 */
+
+.main2-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.main2-content h1{
+    font-size: 50px;
+    position: relative;
+
+}
+.main2-content h1 .lh1{
+    width: 100px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    left: 150px;
+}
+.main2-content p{
+    font-size: 30px;
+   padding-top: 30px;
+}
+.main3-box-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    margin-top: 40px;
+}
+
+.main3-box{
+    flex-basis: 20%;
+}
+.main3-box h2{
+padding-top: 20px;
+padding-bottom: 15px;
+font-weight: 500;
+}
+.main3-box h2 p{
+    line-height: 13px;
+}
 
 
 @media screen and (max-width:768px){
@@ -161,5 +213,51 @@ cursor: pointer;
     }
     .nav2-bar i{
         padding-right: 10px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    /* h1,h2,p,main-btn */
+    .banner-content h1{
+        font-size: 50px;
+    }
+    .banner-content h2{
+        font-size: 50px;
+    }
+    .banner-content p{
+        font-size: 11px;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    /* h1,h2,p,main-btn */
+    .banner-content h1{
+        font-size: 40px;
+    }
+    .banner-content h2{
+        font-size: 40px;
+    }
+    .banner-content p{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px){
+    .banner-content{
+        padding-top: 10px;
+    }
+    .banner-content h1{
+        font-size: 20px;
+    }
+    .banner-content h2{
+        font-size: 21px;
+    }
+    .banner-content p{
+        font-size: 8px;
+        display: none;
+    }
+.main-btn{
+        display: none;
     }
 }
