@@ -79,6 +79,63 @@ cursor: pointer;
     color: white;
 }
 
+
+/* side-nar-bar  */
+.fa-solid{
+    position: relative;
+}
+#op{
+    position: absolute;
+    margin-left: -26px;
+    margin-top: 0px;
+    padding: 40px;
+    opacity: 0%;
+    z-index: 999;
+    font-size: 40px;
+    background-color: red;
+   
+}
+
+input {
+    width: 29px;
+    height: 25px;
+}
+
+
+.side-nav-bar{
+    display: none;
+}
+
+.chick:checked ~ .side-nav-bar{
+    display: block;
+}
+.side-nav-bar{
+    text-align: start;
+    padding: 15px;
+    
+}
+.side-nav-bar p a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px ;
+    line-height: 32px;
+    text-align: end;
+    
+}
+.side-nav-bar p a:hover{
+    color: rgb(253, 189, 14);
+}
+
+.side-nav-bar button{
+    padding: 5px 10px;
+    
+}
+.side-nav-bar button:hover{
+    background-color:rgb(253, 189, 14) ;
+    border: none;
+}
+
+
 /* slider  */
 .main-banner{
     display: flex;
@@ -385,6 +442,9 @@ animation: left 1s ease-in-out;
 .products{
     background-image: url(images/bg.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 100%;
+    height: 100%; */
 }
 .products-container{
     display: flex;
@@ -590,9 +650,11 @@ animation: left 1s ease-in-out;
         padding: 7px 0px;
         font-size: 27px;
         text-align: end;
+        
     }
     .nav2-bar i{
         padding-right: 10px;
+        /* overflow:-moz-hidden-unscrollable; */
     }
 }
 
@@ -791,7 +853,7 @@ font-size: 29px;
 .service-card{
 
     text-align: centere;
-    flex-basis: 10%;
+    flex-basis:31.5%;
     text-align: center;
     background-color: white;
     box-shadow: rgba(49, 162, 211, 0.12) 0px 2px 4px 5px, rgba(115, 118, 119, 0.52) 0px 2px 16px 0px;
@@ -1773,6 +1835,8 @@ font-size: 29px;
 .contact-us p a:hover{
     color:rgb(253, 189, 14) ;
 }
+
+
 
 
 }
