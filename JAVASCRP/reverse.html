@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="i1">
+    <!-- <p>tech</p> -->
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <button onclick="change()">Result</button>
+</body>
+<script>
+    function change(){
+        var a = document.getElementById("i1").value
+        var store= document.getElementById("p1")
+        var store1=document.getElementById("p2")
+        var out=""
+        var a1=""
+        var a2=""
+
+        for(i=a.length-1.;i>=0;i--){
+            // store.innerHTML+=a[i]
+            out+=a[i]
+        }
+        store.innerHTML+=out
+
+        a1=a.toLowerCase()
+        a2=out.toLowerCase()
+
+        
+        if(a1==a2){
+            store1.innerHTML="palindrome"
+        }
+        else{
+            store1.innerHTML="not a palindrome"
+        }
+
+        // store.innerHTML+=a
+
+    }
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Enter the 1st side:</h3>
+    <input type="text" id="i1">
+    <h3>Enter the 2st side:</h3>
+    <input type="text" id="i2">
+    <h3>Enter the 3st side:</h3>
+    <input type="text" id="i3">
+    <p id="p1"></p>
+    <button onclick="change()">Result</button>
+</body>
+<script>
+        function change(){
+           var a=document.getElementById("i1").value
+           var b=document.getElementById("i2").value
+           var c=document.getElementById("i3").value
+           var store=document.getElementById("p1")
+
+           if(a==b && b==c ){
+                store.innerHTML="It is an eqilateral triangle"
+           }
+           else if(b==c || a==c || a==b){
+                store.innerHTML="It is an isocelese triangle"
+           }
+           else{
+                store.innerHTML="It is an scalar triangle"
+           }
+        }
+</script>
+</html>

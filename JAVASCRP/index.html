@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+       
+        <input type="text" id="i1">
+        <input type="text" id="i2">
+        <button onclick="visite()">Submit</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p1"></p>
+</body>
+     <script>
+        function visite(){
+        //   alert("Thank you")
+           var a=document.getElementById("i1").value
+           var store=document.getElementById("i2")
+            // store.value=a
+            // console.log(a)
+            switch(a){
+                case "one":
+                // alert("one")
+                store.value=a;
+                break;
+                case "two":
+                    alert("two")
+                    break;
+                case "three":
+                    alert("three")
+                    break;
+                
+
+            }
+            
+        }
+     </script>
+</html>
