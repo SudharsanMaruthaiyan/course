@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    /* background: linear-gradient(160deg , gray ,rgb(185, 185, 238) ); */
+    background: url(pexels-ezequiel-4767578.jpg);
+    background-size: cover;
+}
+
+.login-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    /* box-shadow: -5px -5px 12px rgba(255, 255, 255, 0.082),  5px 5px 12px rgba(255, 255, 255, 0.082); */
+    /* box-shadow: inset -5px -5px 12px rgba(255, 255, 255, 0.212), inset 5px 5px 12px rgba(255, 255, 255, 0.212); */
+    box-shadow:  -5px -5px 12px, inset 5px 5px 12px rgba(224, 224, 224, 0.39);
+    border-radius: 30px;
+    background-color: rgba(230, 223, 223, 0.26);
+    width: 300px;
+    backdrop-filter: blur(2px);
+    border: 2px solid  rgba(255, 255, 255, 0.171);
+    /* background-color: rgba(255, 255, 255, 0.233); */
+}
+
+.media-icon{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+h2{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 28px;
+    color: rgb(17, 24, 31);
+    padding-bottom: 35px;
+    /* color: rgb(255, 255, 255); */
+}
+
+input{
+    padding: 10px ;
+    border: none;
+    outline: none;
+    /* background-color: white; */
+    box-shadow:  -5px -5px 12px, inset 5px 5px 12px rgba(224, 224, 224, 0.39);
+    border-radius: 30px;
+    /* background: transparent; */
+    background-color: rgba(255, 255, 255, 0.233);
+    /* background: transparent; */
+}
+
+button{
+    padding: 10px 20px ;
+    background-color: white;
+    /* box-shadow: inset -5px -5px 12px, inset 5px 5px 12px rgba(0, 0, 0, 0.16); */
+    border-radius: 30px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 254, 254, 0.233);
+    box-shadow:  -5px -5px 12px, inset 5px 5px 12px rgba(224, 224, 224, 0.39);
+}
+
+.media-icon{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+p{
+    /* color: rgb(170, 165, 165); */
+    padding-bottom: 10px;
+}
+
+#i3{
+    width: 100%;
+    position: relative;
+}
+
+.fa-solid{
+    position: absolute;
+    top: 270px;
+    right: 60px;
+    transform: translateX(20px);
+}
+
+#open{
+    display: none;
+}
+
+/* #close{
+    display: none;
+} */
