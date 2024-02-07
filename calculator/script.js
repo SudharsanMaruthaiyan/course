@@ -14,10 +14,17 @@ function delet(){
 }
 
 function calculate(){
-    input.value=eval(input.value)
+    try{
+        input.value=eval(input.value)
+    }
+    catch{
+        alert("invaled")
+    }
 }
 
 // var num=[1,2,3,4,4,5,7,5]
 // console.log(num)
 // var nu=num.slice(0,-1)
 // console.log(nu)
+
+
