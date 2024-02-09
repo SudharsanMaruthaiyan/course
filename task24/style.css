@@ -1,0 +1,17 @@
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+} */
+img{
+    transition: 1.2s;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 50px;
+}

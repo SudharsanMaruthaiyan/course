@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 24</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="gallery">
+            <img src="nature.jpg" alt="" class="img1" onclick="change()" width="200" height="200">
+            <br>
+            <img src="mg2.jpg" alt="" class="img2" onclick="change1()" width="200" height="200">
+            <br>
+            <img src="mg3.jpg" alt="" class="img3" onclick="change2()" width="200" height="200">
+            <!-- <img src="nature.jpg" alt="" class="img1" onclick="change()" width="200" height="200">
+            <br>
+            <img src="mg2.jpg" alt="" class="img2" onclick="change1()" width="200" height="200">
+            <br>
+            <img src="mg3.jpg" alt="" class="img3" onclick="change2()" width="200" height="200"> -->
+        </div>
+    </div>
+</body>
+<script>
+    var img1=document.querySelector(".img1")
+    var img2=document.querySelector(".img2")
+    var img3=document.querySelector(".img3")
+    function change(){
+        img1.style.height="300px"
+        img2.style.height="200px"
+        img3.style.height="200px"
+        img1.style.transition="1.2s"
+        
+        
+    }
+    function change1(){
+        
+        img1.style.height="200px"
+        img2.style.height="300px"
+        img2.style.transition="1.2s"
+        img3.style.height="200px"
+        
+    }
+    function change2(){
+        img3.style.height="300px"
+        img3.style.transition="1.2s"
+        img2.style.height="200px"
+    }
+</script>
+</html>
