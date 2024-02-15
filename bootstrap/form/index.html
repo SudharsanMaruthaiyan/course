@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container d-flex justify-content-center vh-100 align-items-center">
+            <div class="main2">
+
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="nav nav-tabs d-flex gap-3">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" id="lg" onclick="change()">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" id="rg" onclick="change2()">Registeration</a>
+                            </li>
+                        </ul>
+
+                        <!-- login form  -->
+                        <form action="" method="get" id="login">
+                            <div class="input-group row mt-4">
+                                <div class="col-4 col-sm-3">
+                                    <label for="username">Username</label>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <input type="text" name="username" id="username" class="form-control"
+                                        placeholder="Username">
+                                </div>
+                            </div>
+                            <div class="input-group row mt-4">
+                                <div class="col-4 col-sm-3">
+                                    <label for="Password">Password</label>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <input type="password" name="password" id="password" class="form-control pe-5"
+                                        required placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="button text-center mt-3 d-flex justify-content-center gap-4 align-items-center">
+                                <button class="btn btn-outline-success ps-3 pe-3"> Login</button>
+                                <!-- <p>or</p> -->
+                                <a href="">Forget Password</a>
+                            </div>
+                        </form>
+
+                        <!-- registeration form  -->
+                        <form action="" method="get" class="mt-3" id="registeration">
+                            <div class="input-group row">
+                                <div class="col-4 col-sm-3">
+                                    <label for="username">Username</label>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <input type="text" name="username" id="username" class="form-control"
+                                        placeholder="Username">
+                                </div>
+                            </div>
+                            <div class="input-group row mt-4">
+                                <div class="col-4 col-sm-3 text-sm-start">
+                                    <label for="username">E-mail</label>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <input type="text" name="username" id="username" class="form-control"
+                                        placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="input-group row mt-4">
+                                <div class="col-4 col-sm-3">
+                                    <label for="password" class="form-label">Password</label>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <input type="password" name="password" id="password" class="form-control"
+                                        placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="input-group row mt-4">
+                                <div class="col-4 col-sm-3">
+                                    <label for="c-password" class="form-label">Password (again)</label>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <input type="password" name="password" id="password" class="form-control"
+                                        placeholder="Conform Password">
+                                </div>
+                            </div>
+                            <div class="button d-flex justify-content-center gap-3">
+                                <button class="btn btn-outline-success">Submit</button>
+                                <button class="btn btn-outline-danger">Reset</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+<script>
+    var lg = document.getElementById("lg")
+    var rg = document.getElementById("rg")
+    function change() {
+        lg.style.backgroundColor = "#0dcaf0"
+        rg.style.backgroundColor = ""
+    }
+    function change2() {
+        rg.style.backgroundColor = "#0dcaf0"
+        lg.style.backgroundColor = ""
+    }
+</script>
+
+</html>
